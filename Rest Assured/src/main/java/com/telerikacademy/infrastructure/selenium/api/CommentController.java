@@ -1,4 +1,4 @@
-package com.telerikacademy.infrastructure.selenium.api;
+package src.main.java.com.telerikacademy.infrastructure.selenium.api;
 
 import com.telerikacademy.infrastructure.selenium.models.Comment;
 import com.telerikacademy.infrastructure.selenium.utils.Serializer;

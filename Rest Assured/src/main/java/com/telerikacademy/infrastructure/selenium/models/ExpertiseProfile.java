@@ -1,4 +1,4 @@
-package com.telerikacademy.infrastructure.selenium.models;
+package src.main.java.com.telerikacademy.infrastructure.selenium.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;;
 import java.util.ArrayList;
