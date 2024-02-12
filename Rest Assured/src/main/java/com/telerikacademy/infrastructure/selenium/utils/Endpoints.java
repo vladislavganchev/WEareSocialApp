@@ -21,6 +21,7 @@ public class Endpoints {
     public static final String SEND_REQUEST_ENDPOINT = "/api/auth/request";
     public static final String GET_REQUESTS_ENDPOINT = "/api/auth/users/{receiverUserId}/request/";
     public static final String GET_PROFILE_POSTS_ENDPOINT = "/api/auth/users/{receiverUserId}/request/";
+    public static final String APPROVE_REQUEST_ENDPOINT = "/api/auth/users/{{userIdReceiver}}/request/approve?requestId={{requestId}}";
     public static final String SKILL_ENDPOINT = "/api/skill";
     public static final String SKILL_CREATE_ENDPOINT = SKILL_ENDPOINT + "/create";
     public static final String SKILL_GET_ONE_ENDPOINT = SKILL_ENDPOINT + "/getOne";
