@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Comment {
     public int commentId;
+    public String content;
     public String commentText;
     public boolean deletedConfirmation;
     public int postId;

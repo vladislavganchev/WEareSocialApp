@@ -6,8 +6,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.ArrayList;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Post {
+    public String picture;
     public String content;
     public ArrayList<Object> likes;
     public ArrayList<Object> comments;
     public int rank;
+    public boolean mypublic;
 }
