@@ -61,4 +61,32 @@ public class UserController {
                 .post("/api/users/auth/{currentUserId}/personal")
                 .then().log().all().extract().response();
     }
+
+    public static Response updateExpertiseProfile(Cookies cookies, ExpertiseProfile expertiseProfile, int currentUserId) {
+        String bodyExpertiseProfileString = Serializer.convertObjectToJsonString(expertiseProfile);
+        return givenConfiguredRequest(cookies)
+                .body(bodyExpertiseProfileString)
+                .when()
+                .post(UPDATE_ENDPOINT + currentUserId + "/expertise")
+                .then().log().all().extract().response();
+    }
+
+    public static Response getUserById(String currentUsername, int currentUserId) {
+        return givenConfiguredRequest(null)
+                .when()
+                .get(UPDATE_ENDPOINT + currentUserId)
+                .then().log().all().extract().response();
+    }
+
+    public static Response getProfilePosts(Cookies cookies, int currentUserId) {
+        Page page = new Page();
+        page.size = 10;
+        String bodyPageString = Serializer.convertObjectToJsonString(page);
+        return givenConfiguredRequest(cookies)
+                .pathParam("currentUserId", currentUserId)
+                .body(bodyPageString)
+                .when()
+                .get(GET_PROFILE_POSTS_ENDPOINT)
+                .then().log().all().extract().response();
+    }
 }
