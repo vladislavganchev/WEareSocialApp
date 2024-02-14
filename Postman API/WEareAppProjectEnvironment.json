@@ -1,0 +1,133 @@
+{
+	"id": "629938e2-9a0e-45da-ada6-54fa48e444ec",
+	"name": "WEare App Project Environment",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8081",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "postAuth",
+			"value": "/api/post/auth",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "postEndpoint",
+			"value": "/api/post",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "skillsEndpointCreate",
+			"value": "/api/skill/create",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "skillsEndpointEdit",
+			"value": "/api/skill/edit?skill=",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "skillsEndpointGetOne",
+			"value": "/api/skill/getOne?skillId=",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "skillEndpoint",
+			"value": "/api/skill",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "SkillsDeleteEndpoint",
+			"value": "/api/skill/delete?skillId=",
+			"enabled": true
+		},
+		{
+			"key": "postComments",
+			"value": "/comments",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "postSave",
+			"value": "/creator",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "sorted",
+			"value": "true",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "unsorted",
+			"value": "false",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "postEdit",
+			"value": "/editor",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "postLike",
+			"value": "/likesUp",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "sessionId",
+			"value": "",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "logoutEndpoint",
+			"value": "/logout",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "commentEndpoint",
+			"value": "/api/comment",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "registerEndpoint",
+			"value": "/api/users/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "loginEndpoint",
+			"value": "/authenticate",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "requestEndpoint",
+			"value": "/api/auth/users/",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "skillEndPoint",
+			"value": "/api/skill/",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-02-13T21:35:24.133Z",
+	"_postman_exported_using": "Postman/10.21.14"
+}
