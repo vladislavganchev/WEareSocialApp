@@ -5,7 +5,6 @@ import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.testng.annotations.BeforeClass;
 import src.main.java.com.telerikacademy.infrastructure.selenium.api.CommentController;
 import src.main.java.com.telerikacademy.infrastructure.selenium.api.PostController;
 import src.main.java.com.telerikacademy.infrastructure.selenium.models.Comment;
@@ -21,10 +20,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CreateCommentTest extends BaseTestSetup {
 
-    private Cookies cookies;
-    private Post createdPost;
-    private Comment createComment;
-    private int postId;
+    String uniqueContent;
+    Cookies cookies;
 
     @BeforeEach
     public void setup() {
@@ -54,11 +51,11 @@ public class CreateCommentTest extends BaseTestSetup {
 
         createdComment = response.as(Comment.class);
         assertEquals(createdComment.content, uniqueContent, CONTENT_MISMATCH_MESSAGE);
-        Assert.assertNotNull(createdComment.commentId, COMMENT_ID_NULL_MESSAGE);
+        Assert.assertNotNull(createdComment.commentId);
         Assert.assertNotNull(createdComment.content, CONTENT_NULL_MESSAGE);
-        Assert.assertNotNull(createdComment.likes, LIKES_NULL_MESSAGE);
+        Assert.assertNotNull(createdComment.likes);
         Assert.assertNotNull(createdComment.date, DATE_NULL_MESSAGE);
-        Assert.assertNotNull(createdComment.liked, LIKED_NULL_MESSAGE);
+        Assert.assertNotNull(createdComment.liked);
 
         commentId = createdComment.commentId;
         System.out.println(COMMENT_SUCCESS_MESSAGE + commentId + ALL_PROPERTIES_NOT_NULL);
