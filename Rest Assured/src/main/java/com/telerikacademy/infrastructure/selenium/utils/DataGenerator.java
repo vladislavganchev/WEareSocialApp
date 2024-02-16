@@ -2,6 +2,7 @@ package src.main.java.com.telerikacademy.infrastructure.selenium.utils;
 
 import com.github.javafaker.Faker;
 
+import java.time.Instant;
 import java.util.HashSet;
 import java.util.Random;
 
@@ -57,5 +58,9 @@ public class DataGenerator {
             result.append(characters.charAt(randomIndex));
         }
         return result.toString();
+    }
+
+    public static String generateUniqueContentComment() {
+        return "Test Comment - " + Instant.now().toEpochMilli();
     }
 }

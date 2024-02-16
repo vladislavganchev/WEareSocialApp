@@ -20,9 +20,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CreateCommentTest extends BaseTestSetup {
 
-    String uniqueContent;
-    Cookies cookies;
-
     @BeforeEach
     public void setup() {
         if (!isRegistered) {
