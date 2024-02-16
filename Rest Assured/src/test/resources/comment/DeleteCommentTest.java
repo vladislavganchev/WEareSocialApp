@@ -55,8 +55,7 @@ public class DeleteCommentTest extends BaseTestSetup {
         System.out.println(String.format(DELETE_COMMENT_SUCCESS_MESSAGE,createdComment.commentId));
         isCommentDeleted = true;
     }
-
-    private void isResponse200(Response response) {
+    public static void isResponse200(Response response) {
         assertEquals(response.getStatusCode(), 200, "Expected status code 200, but found " + response.getStatusCode());
     }
 }
